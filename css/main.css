@@ -994,6 +994,9 @@ template {
     margin-top: 57px;
     margin-bottom: 56px;
   }
+  .contact__container .contact__send::before {
+    display: none;
+  }
   .contact__container .contact__span {
     font-size: 10px;
     line-height: 12px;
@@ -1182,8 +1185,8 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-transform: translateX(-40%);
-            transform: translateX(-40%);
+    -webkit-transform: translateX(-40%) translateY(68px);
+            transform: translateX(-40%) translateY(68px);
     -webkit-box-ordinal-group: -1;
         -ms-flex-order: -2;
             order: -2;
@@ -1197,11 +1200,8 @@ template {
     margin-left: 80px;
   }
   .footer__cons {
-    -webkit-transform: translateX(-22%);
-            transform: translateX(-22%);
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -webkit-transform: translateX(-22%) translateY(-54px);
+            transform: translateX(-22%) translateY(-54px);
   }
   .footer__last {
     font-size: 10px;

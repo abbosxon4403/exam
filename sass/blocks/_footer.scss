@@ -116,7 +116,7 @@
         &__links {
             display: flex;
             align-items: center;
-            transform: translateX(-40%);
+            transform: translateX(-40%) translateY(68px);
             order: -2;
         }
         &__socials {
@@ -126,8 +126,7 @@
             margin-left: 80px;
         }
         &__cons {
-            transform: translateX(-22%);
-            order: 1;
+            transform: translateX(-22%) translateY(-54px);
         }
         &__last {
             font-size: 10px;

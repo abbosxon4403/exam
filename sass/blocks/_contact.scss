@@ -109,6 +109,9 @@
                 margin-left: 5px;
                 margin-top: 57px;
                 margin-bottom: 56px;
+                &::before {
+                    display: none;
+                }
             }
             .contact__span {
                 font-size: 10px;
