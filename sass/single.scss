@@ -1,0 +1,115 @@
+@import "main";
+.--active {
+    .header__logo {
+        mix-blend-mode: darken;
+    }
+    .header__select {
+        mix-blend-mode: darken;
+    }
+    background: rgba(24, 24, 24, 0.7);
+    backdrop-filter: blur(9px);
+    .contact {
+        display: block;
+        transform: translateX(-350px) translateY(-300px);
+    }
+}
+
+.hero2 {
+    padding-top: 64px;
+    padding-bottom: 184px;
+    &__sofa-img-link {
+        mix-blend-mode: darken;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__heading {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 150%;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    &__collection {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: capitalize;
+        color: #343434;
+    }
+    &__text {
+        max-width: 371px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 150%;
+        /* or 27px */
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    &__span {
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        text-transform: uppercase;
+        color: #FF9619;
+        margin-bottom: 30px;
+    }
+    &__btn {
+        width: 288px;
+        height: 50px;
+        text-align: center;
+        border: none;
+        background-color: #FF9619;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+.contact {
+    background-color: transparent;
+    display: none;
+}
+
+@media only screen and (max-width: 376px) {
+    .hero2 {
+        &__container {
+            display: block;
+        }
+        &__sofa-img {
+            max-width: 340px;
+            height: auto;
+        }
+    }
+    .--active {
+        .contact {
+            display: block;
+            transform: translateX(10px) translateY(-600px);
+            z-index: 100;
+            background-color: #FFFFFF;
+            margin-right: 25px;
+            padding-top: -50px;
+            &__send {
+                max-width: 340px;
+                max-height: 200px;
+                padding: 0;
+                margin: 22px 36px 36px 17px;
+            }
+            &__send::before {
+                display: none;
+            }
+        }
+    }
+}
